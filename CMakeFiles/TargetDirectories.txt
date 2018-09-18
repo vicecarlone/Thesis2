@@ -1,0 +1,3 @@
+/home/tuantu/Desktop/thesis/CMakeFiles/rebuild_cache.dir
+/home/tuantu/Desktop/thesis/CMakeFiles/Extract.dir
+/home/tuantu/Desktop/thesis/CMakeFiles/edit_cache.dir

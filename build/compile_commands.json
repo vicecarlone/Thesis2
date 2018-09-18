@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/tuantu/Desktop/thesis/build",
+  "command": "/usr/bin/g++-7   -isystem /usr/include/opencv  -g   -o CMakeFiles/DisplayImage.dir/frame.cpp.o -c /home/tuantu/Desktop/thesis/frame.cpp",
+  "file": "/home/tuantu/Desktop/thesis/frame.cpp"
+}
+]
