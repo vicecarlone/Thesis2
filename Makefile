@@ -123,6 +123,46 @@ Extract/fast:
 	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/build
 .PHONY : Extract/fast
 
+#=============================================================================
+# Target rules for targets named Display
+
+# Build rule for target.
+Display: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Display
+.PHONY : Display
+
+# fast build rule for target.
+Display/fast:
+	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/build
+.PHONY : Display/fast
+
+DisplayImage.o: DisplayImage.cpp.o
+
+.PHONY : DisplayImage.o
+
+# target to build an object file
+DisplayImage.cpp.o:
+	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/DisplayImage.cpp.o
+.PHONY : DisplayImage.cpp.o
+
+DisplayImage.i: DisplayImage.cpp.i
+
+.PHONY : DisplayImage.i
+
+# target to preprocess a source file
+DisplayImage.cpp.i:
+	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/DisplayImage.cpp.i
+.PHONY : DisplayImage.cpp.i
+
+DisplayImage.s: DisplayImage.cpp.s
+
+.PHONY : DisplayImage.s
+
+# target to generate assembly for a file
+DisplayImage.cpp.s:
+	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/DisplayImage.cpp.s
+.PHONY : DisplayImage.cpp.s
+
 frame.o: frame.cpp.o
 
 .PHONY : frame.o
@@ -157,8 +197,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Extract"
 	@echo "... edit_cache"
+	@echo "... Extract"
+	@echo "... Display"
+	@echo "... DisplayImage.o"
+	@echo "... DisplayImage.i"
+	@echo "... DisplayImage.s"
 	@echo "... frame.o"
 	@echo "... frame.i"
 	@echo "... frame.s"

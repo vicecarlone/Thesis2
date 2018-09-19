@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/tuantu/Desktop/thesis
 CMAKE_BINARY_DIR = /home/tuantu/Desktop/thesis/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/DisplayImage.dir
+# Target rules for target CMakeFiles/Extract.dir
 
 # All Build rule for target.
-CMakeFiles/DisplayImage.dir/all:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/depend
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/build/CMakeFiles --progress-num=1,2 "Built target DisplayImage"
-.PHONY : CMakeFiles/DisplayImage.dir/all
+CMakeFiles/Extract.dir/all:
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/depend
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/build/CMakeFiles --progress-num=1,2 "Built target Extract"
+.PHONY : CMakeFiles/Extract.dir/all
 
 # Include target in all.
-all: CMakeFiles/DisplayImage.dir/all
+all: CMakeFiles/Extract.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DisplayImage.dir/rule: cmake_check_build_system
+CMakeFiles/Extract.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DisplayImage.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Extract.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/build/CMakeFiles 0
-.PHONY : CMakeFiles/DisplayImage.dir/rule
+.PHONY : CMakeFiles/Extract.dir/rule
 
 # Convenience name for target.
-DisplayImage: CMakeFiles/DisplayImage.dir/rule
+Extract: CMakeFiles/Extract.dir/rule
 
-.PHONY : DisplayImage
-
-# clean rule for target.
-CMakeFiles/DisplayImage.dir/clean:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/clean
-.PHONY : CMakeFiles/DisplayImage.dir/clean
+.PHONY : Extract
 
 # clean rule for target.
-clean: CMakeFiles/DisplayImage.dir/clean
+CMakeFiles/Extract.dir/clean:
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/clean
+.PHONY : CMakeFiles/Extract.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Extract.dir/clean
 
 .PHONY : clean
 

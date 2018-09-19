@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DisplayImage
+# Target rules for targets named Extract
 
 # Build rule for target.
-DisplayImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DisplayImage
-.PHONY : DisplayImage
+Extract: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Extract
+.PHONY : Extract
 
 # fast build rule for target.
-DisplayImage/fast:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-.PHONY : DisplayImage/fast
+Extract/fast:
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/build
+.PHONY : Extract/fast
 
 frame.o: frame.cpp.o
 
@@ -129,7 +129,7 @@ frame.o: frame.cpp.o
 
 # target to build an object file
 frame.cpp.o:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/frame.cpp.o
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/frame.cpp.o
 .PHONY : frame.cpp.o
 
 frame.i: frame.cpp.i
@@ -138,7 +138,7 @@ frame.i: frame.cpp.i
 
 # target to preprocess a source file
 frame.cpp.i:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/frame.cpp.i
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/frame.cpp.i
 .PHONY : frame.cpp.i
 
 frame.s: frame.cpp.s
@@ -147,7 +147,7 @@ frame.s: frame.cpp.s
 
 # target to generate assembly for a file
 frame.cpp.s:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/frame.cpp.s
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/frame.cpp.s
 .PHONY : frame.cpp.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... DisplayImage"
+	@echo "... Extract"
 	@echo "... edit_cache"
 	@echo "... frame.o"
 	@echo "... frame.i"
