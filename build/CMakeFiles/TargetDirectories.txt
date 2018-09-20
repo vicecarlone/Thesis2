@@ -1,3 +1,4 @@
 /home/tuantu/Desktop/thesis/build/CMakeFiles/rebuild_cache.dir
-/home/tuantu/Desktop/thesis/build/CMakeFiles/Extract.dir
 /home/tuantu/Desktop/thesis/build/CMakeFiles/edit_cache.dir
+/home/tuantu/Desktop/thesis/build/CMakeFiles/Extract.dir
+/home/tuantu/Desktop/thesis/build/CMakeFiles/Display.dir
