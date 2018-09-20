@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles /home/tuantu/Desktop/thesis/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/tuantu/Desktop/thesis && $(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles /home/tuantu/Desktop/thesis/util/CMakeFiles/progress.marks
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 util/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 util/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,70 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tuantu/Desktop/thesis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named blob
+# Convenience name for target.
+util/CMakeFiles/blob.dir/rule:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/blob.dir/rule
+.PHONY : util/CMakeFiles/blob.dir/rule
 
-# Build rule for target.
-blob: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 blob
+# Convenience name for target.
+blob: util/CMakeFiles/blob.dir/rule
+
 .PHONY : blob
 
 # fast build rule for target.
 blob/fast:
-	$(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/build
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/build
 .PHONY : blob/fast
 
-#=============================================================================
-# Target rules for targets named Display
+Blob.o: Blob.cpp.o
 
-# Build rule for target.
-Display: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Display
-.PHONY : Display
+.PHONY : Blob.o
 
-# fast build rule for target.
-Display/fast:
-	$(MAKE) -f Display/CMakeFiles/Display.dir/build.make Display/CMakeFiles/Display.dir/build
-.PHONY : Display/fast
+# target to build an object file
+Blob.cpp.o:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/Blob.cpp.o
+.PHONY : Blob.cpp.o
 
-#=============================================================================
-# Target rules for targets named Extract
+Blob.i: Blob.cpp.i
 
-# Build rule for target.
-Extract: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Extract
-.PHONY : Extract
+.PHONY : Blob.i
 
-# fast build rule for target.
-Extract/fast:
-	$(MAKE) -f ExtractFrame/CMakeFiles/Extract.dir/build.make ExtractFrame/CMakeFiles/Extract.dir/build
-.PHONY : Extract/fast
+# target to preprocess a source file
+Blob.cpp.i:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/Blob.cpp.i
+.PHONY : Blob.cpp.i
 
-#=============================================================================
-# Target rules for targets named Subtract
+Blob.s: Blob.cpp.s
 
-# Build rule for target.
-Subtract: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Subtract
-.PHONY : Subtract
+.PHONY : Blob.s
 
-# fast build rule for target.
-Subtract/fast:
-	$(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/build
-.PHONY : Subtract/fast
+# target to generate assembly for a file
+Blob.cpp.s:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/Blob.cpp.s
+.PHONY : Blob.cpp.s
 
 # Help Target
 help:
@@ -169,11 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... blob"
-	@echo "... Display"
-	@echo "... Extract"
-	@echo "... Subtract"
+	@echo "... edit_cache"
+	@echo "... Blob.o"
+	@echo "... Blob.i"
+	@echo "... Blob.s"
 .PHONY : help
 
 
@@ -185,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tuantu/Desktop/thesis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

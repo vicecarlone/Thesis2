@@ -60,150 +60,222 @@ CMAKE_SOURCE_DIR = /home/tuantu/Desktop/thesis
 CMAKE_BINARY_DIR = /home/tuantu/Desktop/thesis
 
 #=============================================================================
-# Target rules for target CMakeFiles/Subtract.dir
+# Directory level rules for directory util
 
-# All Build rule for target.
-CMakeFiles/Subtract.dir/all: CMakeFiles/blob.dir/all
-	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/depend
-	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=5,6 "Built target Subtract"
-.PHONY : CMakeFiles/Subtract.dir/all
+# Convenience name for "all" pass in the directory.
+util/all: util/CMakeFiles/blob.dir/all
 
-# Include target in all.
-all: CMakeFiles/Subtract.dir/all
+.PHONY : util/all
 
-.PHONY : all
+# Convenience name for "clean" pass in the directory.
+util/clean: util/CMakeFiles/blob.dir/clean
 
-# Build rule for subdir invocation for target.
-CMakeFiles/Subtract.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Subtract.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
-.PHONY : CMakeFiles/Subtract.dir/rule
+.PHONY : util/clean
 
-# Convenience name for target.
-Subtract: CMakeFiles/Subtract.dir/rule
+# Convenience name for "preinstall" pass in the directory.
+util/preinstall:
 
-.PHONY : Subtract
-
-# clean rule for target.
-CMakeFiles/Subtract.dir/clean:
-	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/clean
-.PHONY : CMakeFiles/Subtract.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Subtract.dir/clean
-
-.PHONY : clean
+.PHONY : util/preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Display.dir
+# Target rules for target util/CMakeFiles/blob.dir
 
 # All Build rule for target.
-CMakeFiles/Display.dir/all:
-	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/depend
-	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=1,2 "Built target Display"
-.PHONY : CMakeFiles/Display.dir/all
-
-# Include target in all.
-all: CMakeFiles/Display.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Display.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Display.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
-.PHONY : CMakeFiles/Display.dir/rule
-
-# Convenience name for target.
-Display: CMakeFiles/Display.dir/rule
-
-.PHONY : Display
-
-# clean rule for target.
-CMakeFiles/Display.dir/clean:
-	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/clean
-.PHONY : CMakeFiles/Display.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Display.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/blob.dir
-
-# All Build rule for target.
-CMakeFiles/blob.dir/all:
-	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/depend
-	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/build
+util/CMakeFiles/blob.dir/all:
+	$(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/depend
+	$(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=7,8 "Built target blob"
-.PHONY : CMakeFiles/blob.dir/all
+.PHONY : util/CMakeFiles/blob.dir/all
 
 # Include target in all.
-all: CMakeFiles/blob.dir/all
+all: util/CMakeFiles/blob.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/blob.dir/rule: cmake_check_build_system
+util/CMakeFiles/blob.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/blob.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/blob.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
-.PHONY : CMakeFiles/blob.dir/rule
+.PHONY : util/CMakeFiles/blob.dir/rule
 
 # Convenience name for target.
-blob: CMakeFiles/blob.dir/rule
+blob: util/CMakeFiles/blob.dir/rule
 
 .PHONY : blob
 
 # clean rule for target.
-CMakeFiles/blob.dir/clean:
-	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/clean
-.PHONY : CMakeFiles/blob.dir/clean
+util/CMakeFiles/blob.dir/clean:
+	$(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/clean
+.PHONY : util/CMakeFiles/blob.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/blob.dir/clean
+clean: util/CMakeFiles/blob.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Extract.dir
+# Directory level rules for directory Display
+
+# Convenience name for "all" pass in the directory.
+Display/all: Display/CMakeFiles/Display.dir/all
+
+.PHONY : Display/all
+
+# Convenience name for "clean" pass in the directory.
+Display/clean: Display/CMakeFiles/Display.dir/clean
+
+.PHONY : Display/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Display/preinstall:
+
+.PHONY : Display/preinstall
+
+#=============================================================================
+# Target rules for target Display/CMakeFiles/Display.dir
 
 # All Build rule for target.
-CMakeFiles/Extract.dir/all:
-	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/depend
-	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=3,4 "Built target Extract"
-.PHONY : CMakeFiles/Extract.dir/all
+Display/CMakeFiles/Display.dir/all:
+	$(MAKE) -f Display/CMakeFiles/Display.dir/build.make Display/CMakeFiles/Display.dir/depend
+	$(MAKE) -f Display/CMakeFiles/Display.dir/build.make Display/CMakeFiles/Display.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=1,2 "Built target Display"
+.PHONY : Display/CMakeFiles/Display.dir/all
 
 # Include target in all.
-all: CMakeFiles/Extract.dir/all
+all: Display/CMakeFiles/Display.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Extract.dir/rule: cmake_check_build_system
+Display/CMakeFiles/Display.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Extract.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Display/CMakeFiles/Display.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
-.PHONY : CMakeFiles/Extract.dir/rule
+.PHONY : Display/CMakeFiles/Display.dir/rule
 
 # Convenience name for target.
-Extract: CMakeFiles/Extract.dir/rule
+Display: Display/CMakeFiles/Display.dir/rule
+
+.PHONY : Display
+
+# clean rule for target.
+Display/CMakeFiles/Display.dir/clean:
+	$(MAKE) -f Display/CMakeFiles/Display.dir/build.make Display/CMakeFiles/Display.dir/clean
+.PHONY : Display/CMakeFiles/Display.dir/clean
+
+# clean rule for target.
+clean: Display/CMakeFiles/Display.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ExtractFrame
+
+# Convenience name for "all" pass in the directory.
+ExtractFrame/all: ExtractFrame/CMakeFiles/Extract.dir/all
+
+.PHONY : ExtractFrame/all
+
+# Convenience name for "clean" pass in the directory.
+ExtractFrame/clean: ExtractFrame/CMakeFiles/Extract.dir/clean
+
+.PHONY : ExtractFrame/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ExtractFrame/preinstall:
+
+.PHONY : ExtractFrame/preinstall
+
+#=============================================================================
+# Target rules for target ExtractFrame/CMakeFiles/Extract.dir
+
+# All Build rule for target.
+ExtractFrame/CMakeFiles/Extract.dir/all:
+	$(MAKE) -f ExtractFrame/CMakeFiles/Extract.dir/build.make ExtractFrame/CMakeFiles/Extract.dir/depend
+	$(MAKE) -f ExtractFrame/CMakeFiles/Extract.dir/build.make ExtractFrame/CMakeFiles/Extract.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=3,4 "Built target Extract"
+.PHONY : ExtractFrame/CMakeFiles/Extract.dir/all
+
+# Include target in all.
+all: ExtractFrame/CMakeFiles/Extract.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ExtractFrame/CMakeFiles/Extract.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ExtractFrame/CMakeFiles/Extract.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
+.PHONY : ExtractFrame/CMakeFiles/Extract.dir/rule
+
+# Convenience name for target.
+Extract: ExtractFrame/CMakeFiles/Extract.dir/rule
 
 .PHONY : Extract
 
 # clean rule for target.
-CMakeFiles/Extract.dir/clean:
-	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/clean
-.PHONY : CMakeFiles/Extract.dir/clean
+ExtractFrame/CMakeFiles/Extract.dir/clean:
+	$(MAKE) -f ExtractFrame/CMakeFiles/Extract.dir/build.make ExtractFrame/CMakeFiles/Extract.dir/clean
+.PHONY : ExtractFrame/CMakeFiles/Extract.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Extract.dir/clean
+clean: ExtractFrame/CMakeFiles/Extract.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Subtract
+
+# Convenience name for "all" pass in the directory.
+Subtract/all: Subtract/CMakeFiles/Subtract.dir/all
+
+.PHONY : Subtract/all
+
+# Convenience name for "clean" pass in the directory.
+Subtract/clean: Subtract/CMakeFiles/Subtract.dir/clean
+
+.PHONY : Subtract/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Subtract/preinstall:
+
+.PHONY : Subtract/preinstall
+
+#=============================================================================
+# Target rules for target Subtract/CMakeFiles/Subtract.dir
+
+# All Build rule for target.
+Subtract/CMakeFiles/Subtract.dir/all: util/CMakeFiles/blob.dir/all
+	$(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/depend
+	$(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tuantu/Desktop/thesis/CMakeFiles --progress-num=5,6 "Built target Subtract"
+.PHONY : Subtract/CMakeFiles/Subtract.dir/all
+
+# Include target in all.
+all: Subtract/CMakeFiles/Subtract.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Subtract/CMakeFiles/Subtract.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 Subtract/CMakeFiles/Subtract.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
+.PHONY : Subtract/CMakeFiles/Subtract.dir/rule
+
+# Convenience name for target.
+Subtract: Subtract/CMakeFiles/Subtract.dir/rule
+
+.PHONY : Subtract
+
+# clean rule for target.
+Subtract/CMakeFiles/Subtract.dir/clean:
+	$(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/clean
+.PHONY : Subtract/CMakeFiles/Subtract.dir/clean
+
+# clean rule for target.
+clean: Subtract/CMakeFiles/Subtract.dir/clean
 
 .PHONY : clean
 

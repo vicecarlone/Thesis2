@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ExtractFrame
+CMAKE_PROJECT_NAME:STATIC=Thesis
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -181,14 +181,14 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-ExtractFrame_BINARY_DIR:STATIC=/home/tuantu/Desktop/thesis
-
-//Value Computed by CMake
-ExtractFrame_SOURCE_DIR:STATIC=/home/tuantu/Desktop/thesis
-
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/share/OpenCV
+
+//Value Computed by CMake
+Thesis_BINARY_DIR:STATIC=/home/tuantu/Desktop/thesis
+
+//Value Computed by CMake
+Thesis_SOURCE_DIR:STATIC=/home/tuantu/Desktop/thesis
 
 //Dependencies for target
 blob_LIB_DEPENDS:STATIC=
@@ -292,7 +292,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

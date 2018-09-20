@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles /home/tuantu/Desktop/thesis/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/tuantu/Desktop/thesis && $(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles /home/tuantu/Desktop/thesis/Subtract/CMakeFiles/progress.marks
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 Subtract/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tuantu/Desktop/thesis/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 Subtract/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,70 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 Subtract/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 Subtract/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tuantu/Desktop/thesis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named blob
+# Convenience name for target.
+Subtract/CMakeFiles/Subtract.dir/rule:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f CMakeFiles/Makefile2 Subtract/CMakeFiles/Subtract.dir/rule
+.PHONY : Subtract/CMakeFiles/Subtract.dir/rule
 
-# Build rule for target.
-blob: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 blob
-.PHONY : blob
+# Convenience name for target.
+Subtract: Subtract/CMakeFiles/Subtract.dir/rule
 
-# fast build rule for target.
-blob/fast:
-	$(MAKE) -f util/CMakeFiles/blob.dir/build.make util/CMakeFiles/blob.dir/build
-.PHONY : blob/fast
-
-#=============================================================================
-# Target rules for targets named Display
-
-# Build rule for target.
-Display: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Display
-.PHONY : Display
-
-# fast build rule for target.
-Display/fast:
-	$(MAKE) -f Display/CMakeFiles/Display.dir/build.make Display/CMakeFiles/Display.dir/build
-.PHONY : Display/fast
-
-#=============================================================================
-# Target rules for targets named Extract
-
-# Build rule for target.
-Extract: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Extract
-.PHONY : Extract
-
-# fast build rule for target.
-Extract/fast:
-	$(MAKE) -f ExtractFrame/CMakeFiles/Extract.dir/build.make ExtractFrame/CMakeFiles/Extract.dir/build
-.PHONY : Extract/fast
-
-#=============================================================================
-# Target rules for targets named Subtract
-
-# Build rule for target.
-Subtract: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Subtract
 .PHONY : Subtract
 
 # fast build rule for target.
 Subtract/fast:
-	$(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/build
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/build
 .PHONY : Subtract/fast
+
+Subtraction.o: Subtraction.cpp.o
+
+.PHONY : Subtraction.o
+
+# target to build an object file
+Subtraction.cpp.o:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/Subtraction.cpp.o
+.PHONY : Subtraction.cpp.o
+
+Subtraction.i: Subtraction.cpp.i
+
+.PHONY : Subtraction.i
+
+# target to preprocess a source file
+Subtraction.cpp.i:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/Subtraction.cpp.i
+.PHONY : Subtraction.cpp.i
+
+Subtraction.s: Subtraction.cpp.s
+
+.PHONY : Subtraction.s
+
+# target to generate assembly for a file
+Subtraction.cpp.s:
+	cd /home/tuantu/Desktop/thesis && $(MAKE) -f Subtract/CMakeFiles/Subtract.dir/build.make Subtract/CMakeFiles/Subtract.dir/Subtraction.cpp.s
+.PHONY : Subtraction.cpp.s
 
 # Help Target
 help:
@@ -169,11 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... blob"
-	@echo "... Display"
-	@echo "... Extract"
 	@echo "... Subtract"
+	@echo "... edit_cache"
+	@echo "... Subtraction.o"
+	@echo "... Subtraction.i"
+	@echo "... Subtraction.s"
 .PHONY : help
 
 
@@ -185,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tuantu/Desktop/thesis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
