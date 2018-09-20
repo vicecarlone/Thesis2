@@ -190,6 +190,9 @@ ExtractFrame_SOURCE_DIR:STATIC=/home/tuantu/Desktop/thesis
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/share/OpenCV
 
+//Dependencies for target
+blob_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

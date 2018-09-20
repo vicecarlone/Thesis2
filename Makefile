@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Extract
+# Target rules for targets named Subtract
 
 # Build rule for target.
-Extract: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Extract
-.PHONY : Extract
+Subtract: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Subtract
+.PHONY : Subtract
 
 # fast build rule for target.
-Extract/fast:
-	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/build
-.PHONY : Extract/fast
+Subtract/fast:
+	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/build
+.PHONY : Subtract/fast
 
 #=============================================================================
 # Target rules for targets named Display
@@ -135,6 +135,59 @@ Display: cmake_check_build_system
 Display/fast:
 	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/build
 .PHONY : Display/fast
+
+#=============================================================================
+# Target rules for targets named blob
+
+# Build rule for target.
+blob: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blob
+.PHONY : blob
+
+# fast build rule for target.
+blob/fast:
+	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/build
+.PHONY : blob/fast
+
+#=============================================================================
+# Target rules for targets named Extract
+
+# Build rule for target.
+Extract: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Extract
+.PHONY : Extract
+
+# fast build rule for target.
+Extract/fast:
+	$(MAKE) -f CMakeFiles/Extract.dir/build.make CMakeFiles/Extract.dir/build
+.PHONY : Extract/fast
+
+Blob.o: Blob.cpp.o
+
+.PHONY : Blob.o
+
+# target to build an object file
+Blob.cpp.o:
+	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/Blob.cpp.o
+.PHONY : Blob.cpp.o
+
+Blob.i: Blob.cpp.i
+
+.PHONY : Blob.i
+
+# target to preprocess a source file
+Blob.cpp.i:
+	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/Blob.cpp.i
+.PHONY : Blob.cpp.i
+
+Blob.s: Blob.cpp.s
+
+.PHONY : Blob.s
+
+# target to generate assembly for a file
+Blob.cpp.s:
+	$(MAKE) -f CMakeFiles/blob.dir/build.make CMakeFiles/blob.dir/Blob.cpp.s
+.PHONY : Blob.cpp.s
 
 DisplayImage.o: DisplayImage.cpp.o
 
@@ -162,6 +215,33 @@ DisplayImage.s: DisplayImage.cpp.s
 DisplayImage.cpp.s:
 	$(MAKE) -f CMakeFiles/Display.dir/build.make CMakeFiles/Display.dir/DisplayImage.cpp.s
 .PHONY : DisplayImage.cpp.s
+
+Subtraction.o: Subtraction.cpp.o
+
+.PHONY : Subtraction.o
+
+# target to build an object file
+Subtraction.cpp.o:
+	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/Subtraction.cpp.o
+.PHONY : Subtraction.cpp.o
+
+Subtraction.i: Subtraction.cpp.i
+
+.PHONY : Subtraction.i
+
+# target to preprocess a source file
+Subtraction.cpp.i:
+	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/Subtraction.cpp.i
+.PHONY : Subtraction.cpp.i
+
+Subtraction.s: Subtraction.cpp.s
+
+.PHONY : Subtraction.s
+
+# target to generate assembly for a file
+Subtraction.cpp.s:
+	$(MAKE) -f CMakeFiles/Subtract.dir/build.make CMakeFiles/Subtract.dir/Subtraction.cpp.s
+.PHONY : Subtraction.cpp.s
 
 frame.o: frame.cpp.o
 
@@ -198,11 +278,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Extract"
+	@echo "... Subtract"
 	@echo "... Display"
+	@echo "... blob"
+	@echo "... Extract"
+	@echo "... Blob.o"
+	@echo "... Blob.i"
+	@echo "... Blob.s"
 	@echo "... DisplayImage.o"
 	@echo "... DisplayImage.i"
 	@echo "... DisplayImage.s"
+	@echo "... Subtraction.o"
+	@echo "... Subtraction.i"
+	@echo "... Subtraction.s"
 	@echo "... frame.o"
 	@echo "... frame.i"
 	@echo "... frame.s"
